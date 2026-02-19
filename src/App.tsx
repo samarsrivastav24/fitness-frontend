@@ -42,7 +42,7 @@ function App() {
       e.preventDefault();
       const formData = new FormData(e.currentTarget);
 
-      axios.post("http://localhost:5000/api/workouts", {
+      axios.post("https://fitness-tracker-ietn.onrender.com/api/workouts", {
         workoutType: formData.get("workoutType"),
         duration: Number(formData.get("duration")),
         caloriesBurned: Number(formData.get("caloriesBurned")),
